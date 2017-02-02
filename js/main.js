@@ -60,16 +60,13 @@ var badParent = '';
     listEl.addEventListener('click', function(evt){
 
       if(listEl.parentNode === goodParent){
-        goodParent.removeChild(listEl);
         badParent.appendChild(listEl);
       }
 
       else if(listEl.parentNode === badParent){
-        badParent.removeChild(listEl);
         goodParent.appendChild(listEl);
       }
     })
   })
-
 
 // TASK 5 -- (Adventure Mode)-- Add + Remove Item From List
